@@ -7,6 +7,16 @@
 #icon = "home"
 #newtab = true
 
+[[main]]
+identifier = "aaa"
+name = "aaa"
+url = "/categories/example-category/"
+icon = "link"
+
+[main.params]
+icon = "home"
+newtab = false
+
 [[social]]
 identifier = "github"
 name = "GitHub"
