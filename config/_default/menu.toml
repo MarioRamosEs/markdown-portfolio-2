@@ -8,8 +8,8 @@
 #newtab = true
 
 [[main]]
-identifier = "aaa"
-name = "aaa"
+identifier = "ExampleCategoru"
+name = "Example Category"
 url = "/categories/example-category/"
 icon = "link"
 
