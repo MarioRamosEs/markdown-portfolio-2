@@ -3,17 +3,39 @@
 <section class="article-list">
     <article class="main-article">
         <section class="article-content">
-            <!-- Refer to https://discourse.gohugo.io/t/responsive-tables-in-markdown/10639/5 -->
-            {{ $wrappedTable := printf "<div class=\"table-wrapper\">${1}</div>" }}
-            {{ .Content | replaceRE "(<table>(?:.|\n)+?</table>)" $wrappedTable | safeHTML }}
-
-            <h1>titulo</h1>
-            <p>hello</p>
+            <h1>About Me</h1>
+            <p>FullStack Developer focused in .NET Core, Azure and Angular/Vue. Although I also like to program video
+                games and other things in my spare time. Eager to learn more every day. 👨‍💻</p>
+            <p>Most of the projects I have worked for are private, but here I show some of the ones that are public.</p>
         </section>
-        <footer class="article-footer">
-    
+    </article>
 
-        </footer>
+    <article class="main-article">
+        <section class="article-content">
+            <h1>Tech Stack</h1>
+            <p>TODO</p>
+        </section>
+    </article>
+
+    <article class="main-article">
+        <section class="article-content">
+            <h1>Work Experience</h1>
+
+            <h2>ENCAMINA - AI Cloud Solutions Dev</h2>
+            <p>TODO</p>
+
+            <h2>ENCAMINA - AI Cloud Solutions Dev</h2>
+            <p>TODO</p>
+        </section>
+    </article>
+
+    <article class="main-article">
+        <section class="article-content">
+            <h1>Certifications</h1>
+
+            <h2>Microsoft Certified: Azure Developer Associate</h2>
+            <p>TODO</p>
+        </section>
     </article>
 </section>
 
