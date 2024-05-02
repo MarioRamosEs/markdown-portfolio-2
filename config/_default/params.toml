@@ -1,6 +1,6 @@
 # Pages placed under these sections will be shown on homepage and archive page.
-# mainSections = []
-mainSections = ["post"]
+mainSections = []
+# mainSections = ["post"]
 # Output page's full content in RSS.
 rssFullContent = true
 favicon = "/favicon.png"
@@ -65,8 +65,8 @@ local = false
 src = ""
 
 [colorScheme]
-toggle = true
-default = "auto"
+toggle = false
+default = "light"
 
 [imageProcessing.cover]
 enabled = true

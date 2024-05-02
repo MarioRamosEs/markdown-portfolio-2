@@ -1,6 +1,24 @@
 {{ define "main" }}
 
-TODO ABOUT ME
+<section class="article-list">
+    <article class="main-article">
+        <section class="article-content">
+            <!-- Refer to https://discourse.gohugo.io/t/responsive-tables-in-markdown/10639/5 -->
+            {{ $wrappedTable := printf "<div class=\"table-wrapper\">${1}</div>" }}
+            {{ .Content | replaceRE "(<table>(?:.|\n)+?</table>)" $wrappedTable | safeHTML }}
+
+            <h1>titulo</h1>
+            <p>hello</p>
+        </section>
+        <footer class="article-footer">
+    
+
+        </footer>
+    </article>
+</section>
+
+
+
 
 {{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
 {{ $notHidden := where .Site.RegularPages "Params.hidden" "!=" true }}
@@ -20,4 +38,3 @@ TODO ABOUT ME
 {{ define "right-sidebar" }}
 {{ partial "sidebar/right.html" (dict "Context" . "Scope" "homepage") }}
 {{ end }}
-
